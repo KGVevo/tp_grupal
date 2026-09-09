@@ -7,7 +7,8 @@ public abstract class Persona {
     private int legajo;
     private double salario;
 
-    public Persona (String nombre, String dni, int legajo, double salario) {
+    //Constructor
+    public Persona (String nombre, String dni, double salario) {
         this.nombre = nombre;
         this.dni = dni;
         this.legajo = contadorid;
@@ -16,6 +17,7 @@ public abstract class Persona {
     }
 
 
+    //Metodos
     public String getNombre()
     {
         return this.nombre;

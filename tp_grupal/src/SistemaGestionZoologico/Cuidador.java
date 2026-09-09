@@ -6,8 +6,8 @@ public class Cuidador extends Persona {
     private Especialidad especialidad;
 
     //Getter
-    public Cuidador(String nombre, String dni, int legajo, double salario, Especialidad especialidad) {
-        super(nombre, dni, legajo, salario);
+    public Cuidador(String nombre, String dni, double salario, Especialidad especialidad) {
+        super(nombre, dni, salario);
         this.especialidad = especialidad;
     }
 
@@ -26,7 +26,7 @@ public class Cuidador extends Persona {
     @Override
     public String toString() {
         return "[Nombre: "+ super.getNombre() + ", DNI: "+ super.getDni() +", Legajo: "+
-                super.getLegajo() + ", Salario: "+ super.getLegajo() + ", Especialidad: "+ this.especialidad +"]";
+                super.getLegajo() + ", Salario: "+ super.getSalario() + ", Especialidad: "+ this.especialidad +"]";
     }
 
 

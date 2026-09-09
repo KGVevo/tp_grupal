@@ -1,5 +1,7 @@
 package ClubDeportivo;
 
+import java.util.Objects;
+
 public class Deporte {
     //Atributos
     private String nombre;
@@ -33,9 +35,23 @@ public class Deporte {
     }
 
 
+    @Override
+    public String toString() {
+        return "[Nombre: "+ this.nombre + ", Descripcion: "+ this.descripcion+", Pelota: "+ this.pelota +
+                ", Dimensiones de la Cancha: "+ this.dimensionesCancha+ "]";
+    }
 
+    @Override
+    public boolean equals(Object obj) {
+        if(obj == this){
+            return true;
+        }
 
+        if(obj == null || getClass() != obj.getClass()){
+            return false;
+        }
 
-
-
+        Deporte aux = (Deporte) obj;
+        return Objects.equals(this.nombre, aux.nombre);
+    }
 }

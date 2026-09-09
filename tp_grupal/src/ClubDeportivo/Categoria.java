@@ -1,5 +1,8 @@
 package ClubDeportivo;
 
 public enum Categoria {
-    //Categoria de que???
+    JUVENIL,
+    SENIOR,
+    PROFESIONAL;
+    
 }
