@@ -3,9 +3,9 @@ package SistemaGestionZoologico;
 public abstract class Animal {
     private String nombre;
     private String especie;
-    private int hambre;
-    private int salud;
-    private int higiene;
+    private int hambre;  //Hacemos del 1 al 100
+    private int salud;   //Hacemos del 1 al 100
+    private int higiene; //Hacemos del 1 al 100
 
     public Animal(String nombre, String especie, int hambre, int salud, int higiene) {
         this.nombre = nombre;
