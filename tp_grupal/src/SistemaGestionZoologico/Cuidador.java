@@ -13,24 +13,42 @@ public class Cuidador extends Persona {
 
     //Metodos
     public String alimentar(){
-
-        return "";
+        return "Ha alimentado al animal";
     }
     public String vacunar(){
-
-
-        return "";
+        return "Ha vacunado al animal";
     }
     public String limpiar(){
-
-
-        return "";
+        return "Ha limpeado al animal";
     }
 
 
     @Override
     public String toString() {
-        return "[Nombre: "+ getNombre() + ", DNI: "+ getDni() +", Legajo: "+ getLegajo() + ", Salario: "+ getLegajo() + ", Especialidad: "+ this.especialidad +"]";
+        return "[Nombre: "+ super.getNombre() + ", DNI: "+ super.getDni() +", Legajo: "+
+                super.getLegajo() + ", Salario: "+ super.getLegajo() + ", Especialidad: "+ this.especialidad +"]";
     }
+
+
+
+    @Override
+    public boolean equals(Object obj) {
+        boolean rta = false;
+
+        if(obj == this){
+            rta = true;
+        }
+
+        if(obj == null || getClass() != obj.getClass()){
+            rta = false;
+        }
+
+
+        Cuidador aux = (Cuidador) obj;
+        rta = this.getLegajo() == aux.getLegajo();
+
+        return rta;
+    }
+
 
 }

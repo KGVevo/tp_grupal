@@ -1,19 +1,20 @@
 package SistemaGestionZoologico;
 
 public abstract class Persona {
-
+    private static int contadorid = 1;
     private String nombre;
     private String dni;
     private int legajo;
     private double salario;
 
-    public Persona (String nombre, String dni, int legajo, double salario)
-    {
+    public Persona (String nombre, String dni, int legajo, double salario) {
         this.nombre = nombre;
         this.dni = dni;
-        this.legajo = legajo;
+        this.legajo = contadorid;
         this.salario = salario;
+        contadorid++;
     }
+
 
     public String getNombre()
     {

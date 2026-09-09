@@ -1,7 +1,7 @@
 package ClubDeportivo;
 
 public class Jugador {
-    //Extends cuando se haga la Clase Persona
+    //""Extends"" cuando se haga la Clase Persona
 
     private Deporte deporte;
     private Categoria categoria;
