@@ -38,5 +38,6 @@ public abstract class Animal {
     public abstract String enfermarse();
     public abstract String ensuciarse();
 
+    public abstract String toString();
 
 }
