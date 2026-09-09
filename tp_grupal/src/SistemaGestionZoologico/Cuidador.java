@@ -1,22 +1,15 @@
 package SistemaGestionZoologico;
 
-public class Cuidador {
-    //Cuando se haga la Clase Persona le hacemos un ""EXTENDS""
-
+public class Cuidador extends Persona {
 
     //Atributos
     private Especialidad especialidad;
 
-
-
-
-
     //Getter
-    public Especialidad getEspecialidad() {
-        return especialidad;
+    public Cuidador(String nombre, String dni, int legajo, double salario, Especialidad especialidad) {
+        super(nombre, dni, legajo, salario);
+        this.especialidad = especialidad;
     }
-
-
 
     //Metodos
     public String alimentar(){
@@ -32,6 +25,12 @@ public class Cuidador {
 
 
         return "";
+    }
+
+
+    @Override
+    public String toString() {
+        return "[Nombre: "+ getNombre() + ", DNI: "+ getDni() +", Legajo: "+ getLegajo() + ", Salario: "+ getLegajo() + ", Especialidad: "+ this.especialidad +"]";
     }
 
 }
