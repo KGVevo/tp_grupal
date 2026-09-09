@@ -51,7 +51,7 @@ public class Reptil extends Animal{
         }
 
         return "Animal [Nombre: "+super.getNombre()+", Especie: "+super.getEspecie()+", Hambre: "+super.getHambre()+
-                ", Salud: "+super.getSalud()+", Higiene: "+super.getHigiene()+", es venenoso: "+venenoso
+                ", Salud: "+super.getSalud()+", Higiene: "+super.getHigiene()+", tiene veneno: "+venenoso
                 +", tiene patas: "+tiene_patas+"]";
     }
 }
