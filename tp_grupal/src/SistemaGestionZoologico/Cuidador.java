@@ -3,10 +3,9 @@ package SistemaGestionZoologico;
 public class Cuidador {
     //Cuando se haga la Clase Persona le hacemos un ""EXTENDS""
 
+
+    //Atributos
     private Especialidad especialidad;
-
-
-
 
 
 
