@@ -28,6 +28,7 @@ public class Mamifero extends Animal{
         return "Ejecucion de ensuciarse";
     }
 
+    @Override
     public String toString()
     {
         return "Animal [Nombre: "+super.getNombre()+", Especie: "+super.getEspecie()+", Hambre: "+super.getHambre()+

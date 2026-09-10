@@ -16,7 +16,6 @@ public class Ave extends Animal {
     {
         return "Ejecucion de alimentarse";
     }
-
     public String enfermarse()
     {
         return "Ejecucion de enfermarse";
@@ -25,6 +24,8 @@ public class Ave extends Animal {
     {
         return "Ejecucion de ensuciarse";
     }
+
+
     public String toString()
     {
         String estado_plumaje;
@@ -40,7 +41,7 @@ public class Ave extends Animal {
 
         return "Animal [Nombre: "+super.getNombre()+", Especie: "+super.getEspecie()+", Hambre: "+super.getHambre()+
                 ", Salud: "+super.getSalud()+", Higiene: "+super.getHigiene()+", Estado Plumaje: "+estado_plumaje
-                +", capacidad de vuelo: "+this.estadoPlumaje+"]";
+                +", capacidad de vuelo: "+this.capacidadDeVuelo+"]";
     }
 
 }

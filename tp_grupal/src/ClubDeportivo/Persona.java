@@ -3,7 +3,6 @@ package ClubDeportivo;
 import java.util.Objects;
 
 public class Persona {
-
     private String nombre;
     private String fecha_nacimiento;
     private String dni;
@@ -27,6 +26,8 @@ public class Persona {
         return dni;
     }
 
+
+    @Override
     public boolean equals(Object obj)
     {
         boolean rta = true;
@@ -55,6 +56,7 @@ public class Persona {
         return Objects.hash(this.getDni());
     }
 
+    @Override
     public String toString()
     {
         return "Persona [Nombre: "+this.nombre+", Fecha de Nacimiento: "+this.fecha_nacimiento

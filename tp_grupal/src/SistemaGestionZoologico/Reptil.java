@@ -16,17 +16,17 @@ public class Reptil extends Animal{
     {
         return "Ejecucion de alimentarse";
     }
-
     public String enfermarse()
     {
         return "Ejecucion de enfermarse";
     }
-
     public String ensuciarse()
     {
         return "Ejecucion de ensuciarse";
     }
 
+
+    @Override
     public String toString()
     {
         String venenoso;
